@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="text-3xl font-bold underline">
+  <div class=" ml-10 text-3xl font-bold underline">
     Welcome to my app
   </div>
 </template>
