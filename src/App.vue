@@ -5,7 +5,7 @@ import Todo from './components/Todo.vue'
 </script>
 
 <template>
-  <Todo msg="Hello Vue 3 + Vite" />
+  <Todo/>
 </template>
 
 <style>
