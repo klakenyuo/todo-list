@@ -5,7 +5,15 @@ module.exports = {
   ],
 
   theme: {
-    extend: {},
+    screens: {
+      
+
+      'lg': {'max': '1279px'},
+      // => @media (max-width: 1279px) { ... }
+ 
+
+      'phone':{'max':'768px'},
+    }
   },
   plugins: [],
 }
