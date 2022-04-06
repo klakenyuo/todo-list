@@ -15,10 +15,10 @@
         <input class=" m-2" type="checkbox" name="allDone" v-model="allDone">
       </div>
       <ul class="w-full ">
-        <li v-for="todo in filteredTodos" v-bind:key="todo.id" class="w-full flex bg-white p-2 border border-rounded  rounded-[5px]" :class="todo.completed?'line-through text-gray-400' : '' " >
+        <li v-for="todo in filteredTodos" v-bind:key="todo.id" class="w-full flex bg-white p-2 border border-rounded  rounded-[5px]"  >
           <div class="w-3/5">
             <input  type="checkbox" name="{{todo.name}} " v-model="todo.completed"  class="mr-2">
-            <label for="{{todo.name}}">{{todo.name}}</label>
+            <label :class="todo.completed?'line-through text-gray-400' : '' " for="{{todo.name}}">{{todo.name}}</label>
           </div>
           <button class="w-2/5 text-red-500 hover:text-gray-300" @click.prevent="deleteTodo(todo)">supprimer</button>
           </li>
