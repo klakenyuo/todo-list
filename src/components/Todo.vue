@@ -24,7 +24,7 @@
           </li>
       </ul>
     </main>
-    <footer class="lg:pl-9 mt-3 flex w-full" v-show="toDolength > 0">
+    <footer class="lg:px-9 mt-3 flex w-full" v-show="toDolength > 0">
       <span class="lg:w-1/2 phone:w-1/2"> <strong>{{notdo}}</strong>  {{notdo>1?'taches' : 'tache' }} à faire</span>
       <!-- <div class="lg:w-1/3 phone:hideen"></div> -->
       <div class="lg:w-1/2 phone:w-1/2  ">
