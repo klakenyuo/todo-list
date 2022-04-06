@@ -30,7 +30,7 @@
       <div class="lg:w-1/2 phone:w-1/2  ">
         <ul class="flex w-full">
           <li class="w-1/3 lg:mr-4 " :class="filter=='all'?'text-blue-900':''" @click.prevent="filter='all'"><a href="#">Toutes</a></li>
-          <li class="w-1/3 lg:mr-4" :class="filter=='todo'?'text-blue-900':''" @click.prevent="filter='todo'"><a href="#">A faire</a></li>
+          <li class="w-1/3 lg:mr-4" :class="filter=='todo'?'text-blue-900':''" @click.prevent="filter='todo'"><a href="#">Afaire</a></li>
           <li class="w-1/3 lg:mr-4" :class="filter=='done'?'text-blue-900':''" @click.prevent="filter='done'"><a href="#">Faites</a></li>
         </ul>
       </div>
