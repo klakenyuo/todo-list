@@ -3,12 +3,12 @@
 <template >
 <div class="w-full flex ">
   <div class=" phone:hidden lg:w-1/3"></div>
-  <div class=" phone:w-full  lg:w-1/3 border-rounded rounded-[10px] mt-10   items-center  ">
+  <div class=" phone:w-full  lg:w-1/3   border-rounded rounded-[10px] mt-10   items-center  ">
     <header class="px-9">
-      <h1 class="w-full text-center   text-3xl  text-red-700  font-bold ">
+      <h1 class="w-full text-center   text-3xl  text-[#1D4F3B]  font-bold ">
         Todo 
       </h1>
-      <input type="text" @keyup.enter="addTodo" v-model="newTodo" class="w-full  mt-7 p-2 border-gray-300 border-rounded rounded-[5px]" placeholder="Ajouter une tache">
+      <input type="text" @keyup.enter="addTodo" v-model="newTodo" class="w-full  mt-7 p-2 border-gray-300 border-rounded rounded-[5px]" placeholder="New Task">
     </header>
     <main class="mt-2 lg:px-9 phone:w-full  ">
       <div class="flex "  v-show="toDolength > 0">
@@ -20,9 +20,9 @@
     </main>
     <div class="lg:px-9 mt-3 flex w-full text-center" v-show="toDolength > 0">
       <ul class="flex w-full">
-          <li class="w-1/3 mr-1   " :class="filter=='all'?'text-blue-900':''" @click.prevent="filter='all'"><a href="#">Toutes</a></li>
-          <li class="w-1/3 mr-1  " :class="filter=='todo'?'text-blue-900':''" @click.prevent="filter='todo'"><a href="#">Afaire</a></li>
-          <li class="w-1/3 mr-1  " :class="filter=='done'?'text-blue-900':''" @click.prevent="filter='done'"><a href="#">Faites</a></li>
+          <li class="w-1/3 mr-1   " :class="filter=='all'?'text-blue-900':''" @click.prevent="filter='all'"><a href="#">All</a></li>
+          <li class="w-1/3 mr-1  " :class="filter=='todo'?'text-blue-900':''" @click.prevent="filter='todo'"><a href="#">ToDo</a></li>
+          <li class="w-1/3 mr-1  " :class="filter=='done'?'text-blue-900':''" @click.prevent="filter='done'"><a href="#">Done</a></li>
         </ul>
     </div>
 

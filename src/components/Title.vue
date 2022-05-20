@@ -1,5 +1,5 @@
 <template>
-<div class="flex w-full text-center" > Il vous reste {{remainingTodosCount}}  taches à faire </div>
+<div class="flex w-full text-center" >  {{remainingTodosCount}}  tasks left to do </div>
     
 </template>
 <script  >

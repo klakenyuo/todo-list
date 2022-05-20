@@ -2,7 +2,7 @@ import vuex from 'vuex'
 // import global from 'vue'
 const state = {
     todos : [{
-        name: 'Tache 0',
+        name: 'First task',
         completed : false
     }]
 }

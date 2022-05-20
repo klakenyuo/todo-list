@@ -4,7 +4,7 @@
             <input  type="checkbox" name="{{todo.name}} " :checked="todo.completed"  @change="setCompleted({ todo: todo })"    class="mr-2">
             <label :class="todo.completed?'line-through text-gray-400' : '' " for="{{todo.name}}">{{todo.name}}</label>
           </div>
-          <button class="w-2/5 text-red-500 hover:text-gray-300" @click.prevent="deleteTodo(todo)">supprimer</button>
+          <button class="w-2/5 text-red-500 hover:text-gray-300" @click.prevent="deleteTodo(todo)">delete</button>
           </li>
 </template>
 <script>
